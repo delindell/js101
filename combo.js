@@ -37,15 +37,15 @@ const checkPalindrom = (string) => {
     if (stringLength === 0 || stringLength === 1){
         return true;
     }
-
-if (string[0] === string[stringLength -1]) {
-    return checkPalindrom(string.slice(1, stringLength -1));
-}
+    if (string[0] === string[stringLength -1]) {
+        return checkPalindrom(string.slice(1, stringLength -1));
+    }
     return false;
 }
 
 console.log(checkPalindrom("yes"));
 console.log(checkPalindrom("mom"));
+console.log(checkPalindrom("Race Car"));
 
 // Challenge #4
 // Lawrence the wide mouth frog is particularly interested

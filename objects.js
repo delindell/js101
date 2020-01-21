@@ -32,7 +32,7 @@ const expense = {
 };
 
 //dot notation
-console.log(expense.cost);
+console.log(expense.cost); //12.57
 
 //bracket notation (use if string is key)
 console.log(expense['cost']);
