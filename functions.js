@@ -11,3 +11,10 @@ console.log(nuggetizer ('fish'));
 console.log(nuggetizer ('cow'));
 console.log(nuggetizer ('pig'));
 console.log(nuggetizer ('tire'));
+
+const dogBreed = (dog) => {
+    return `my favorite dog is ${dog}`
+};
+
+console.log(dogBreed('lab'));
+console.log(dogBreed('cat'));
