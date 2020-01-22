@@ -25,27 +25,28 @@ const oppNum = (num) => {
 console.log(oppNum(1))
 console.log(oppNum(-1))
 
-
 // Challenge #3
 // A palindrome is a word or sentence that's spelled the same
 //  way both forward and backward, 
 // ignoring punctuation, case, and spacing.
 // Console true if the given string is a palindrome. 
 // Otherwise, console false.
-const checkPalindrom = (string) => {
-    let stringLength = string.length;
-    if (stringLength === 0 || stringLength === 1){
+const checkPalindrom = (str) => {
+    let strLength = str.length;
+    if (strLength === 0 || strLength === 1){
         return true;
     }
-    if (string[0] === string[stringLength -1]) {
-        return checkPalindrom(string.slice(1, stringLength -1));
+    if (str[0] === str[strLength -1]) {
+        return checkPalindrom(str.slice(1, strLength -1));
     }
     return false;
 }
 
 console.log(checkPalindrom("yes"));
 console.log(checkPalindrom("mom"));
-console.log(checkPalindrom("Race Car"));
+console.log(checkPalindrom("racecar"));
+console.log(checkPalindrom("Race car"));
+
 
 // Challenge #4
 // Lawrence the wide mouth frog is particularly interested
@@ -58,7 +59,7 @@ console.log(checkPalindrom("Race Car"));
 // encounters, output small if the animal is an alligator
 // (case insensitive) otherwise return wide.
 const mouthSize = (animal) => {
-    if (animal === 'alligator') {
+    if (animal.toLowerCase() === 'alligator') {
         return 'small';
     } else {
         return 'wide';
@@ -68,3 +69,5 @@ const mouthSize = (animal) => {
 
 console.log(mouthSize('alligator'));
 console.log(mouthSize('cat'));
+console.log(mouthSize('AlLIgAtOr'));
+
